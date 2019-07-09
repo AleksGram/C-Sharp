@@ -1,0 +1,14 @@
+d:\Keep\C#\Garage.Test\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+d:\Keep\C#\Garage.Test\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+d:\Keep\C#\Garage.Test\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+d:\Keep\C#\Garage.Test\bin\Debug\netcoreapp2.2\Garage.Test.deps.json
+d:\Keep\C#\Garage.Test\bin\Debug\netcoreapp2.2\Garage.Test.runtimeconfig.json
+d:\Keep\C#\Garage.Test\bin\Debug\netcoreapp2.2\Garage.Test.runtimeconfig.dev.json
+d:\Keep\C#\Garage.Test\bin\Debug\netcoreapp2.2\Garage.Test.dll
+d:\Keep\C#\Garage.Test\bin\Debug\netcoreapp2.2\Garage.Test.pdb
+d:\Keep\C#\Garage.Test\obj\Debug\netcoreapp2.2\Garage.Test.csprojAssemblyReference.cache
+d:\Keep\C#\Garage.Test\obj\Debug\netcoreapp2.2\Garage.Test.csproj.CoreCompileInputs.cache
+d:\Keep\C#\Garage.Test\obj\Debug\netcoreapp2.2\Garage.Test.AssemblyInfoInputs.cache
+d:\Keep\C#\Garage.Test\obj\Debug\netcoreapp2.2\Garage.Test.AssemblyInfo.cs
+d:\Keep\C#\Garage.Test\obj\Debug\netcoreapp2.2\Garage.Test.dll
+d:\Keep\C#\Garage.Test\obj\Debug\netcoreapp2.2\Garage.Test.pdb

@@ -1,0 +1,34 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "f3a16825dfb24a0f39a08e2fdc791d812a993d73"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "C#_Fundamentals/1.0.0": {
+        "dependencies": {
+          "xunit.runner.console": "2.4.0"
+        },
+        "runtime": {
+          "C#_Fundamentals.dll": {}
+        }
+      },
+      "xunit.runner.console/2.4.0": {}
+    }
+  },
+  "libraries": {
+    "C#_Fundamentals/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "xunit.runner.console/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j4RybETa47FcpA5xbRGO7Zy8SYCxSryvH2MxmXTX5w9PQFKxgn4WHaRQEnXtelykOvwc8EAPeav50vysjMoTPg==",
+      "path": "xunit.runner.console/2.4.0",
+      "hashPath": "xunit.runner.console.2.4.0.nupkg.sha512"
+    }
+  }
+}
