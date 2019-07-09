@@ -12,3 +12,6 @@ d:\Keep\C#\Garage.Test\obj\Debug\netcoreapp2.2\Garage.Test.AssemblyInfoInputs.ca
 d:\Keep\C#\Garage.Test\obj\Debug\netcoreapp2.2\Garage.Test.AssemblyInfo.cs
 d:\Keep\C#\Garage.Test\obj\Debug\netcoreapp2.2\Garage.Test.dll
 d:\Keep\C#\Garage.Test\obj\Debug\netcoreapp2.2\Garage.Test.pdb
+d:\Keep\C#\Garage.Test\bin\Debug\netcoreapp2.2\C#_Fundamentals.dll
+d:\Keep\C#\Garage.Test\bin\Debug\netcoreapp2.2\C#_Fundamentals.pdb
+d:\Keep\C#\Garage.Test\obj\Debug\netcoreapp2.2\Garage.Test.csproj.CopyComplete

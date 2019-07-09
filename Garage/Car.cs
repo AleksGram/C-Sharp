@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Garage 
 {
-    class Car
+    public class Car
     {   
         public Car(string name)
         {
