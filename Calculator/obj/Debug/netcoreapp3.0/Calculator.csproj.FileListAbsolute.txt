@@ -1,0 +1,12 @@
+E:\Projects\CHARP\C-Sharp\Calculator\bin\Debug\netcoreapp3.0\Calculator.exe
+E:\Projects\CHARP\C-Sharp\Calculator\bin\Debug\netcoreapp3.0\Calculator.deps.json
+E:\Projects\CHARP\C-Sharp\Calculator\bin\Debug\netcoreapp3.0\Calculator.runtimeconfig.json
+E:\Projects\CHARP\C-Sharp\Calculator\bin\Debug\netcoreapp3.0\Calculator.runtimeconfig.dev.json
+E:\Projects\CHARP\C-Sharp\Calculator\bin\Debug\netcoreapp3.0\Calculator.dll
+E:\Projects\CHARP\C-Sharp\Calculator\bin\Debug\netcoreapp3.0\Calculator.pdb
+E:\Projects\CHARP\C-Sharp\Calculator\obj\Debug\netcoreapp3.0\Calculator.csprojAssemblyReference.cache
+E:\Projects\CHARP\C-Sharp\Calculator\obj\Debug\netcoreapp3.0\Calculator.csproj.CoreCompileInputs.cache
+E:\Projects\CHARP\C-Sharp\Calculator\obj\Debug\netcoreapp3.0\Calculator.AssemblyInfoInputs.cache
+E:\Projects\CHARP\C-Sharp\Calculator\obj\Debug\netcoreapp3.0\Calculator.AssemblyInfo.cs
+E:\Projects\CHARP\C-Sharp\Calculator\obj\Debug\netcoreapp3.0\Calculator.dll
+E:\Projects\CHARP\C-Sharp\Calculator\obj\Debug\netcoreapp3.0\Calculator.pdb
