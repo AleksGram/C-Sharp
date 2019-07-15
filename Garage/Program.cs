@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 
 namespace Garage
@@ -8,12 +9,37 @@ namespace Garage
     {
         static void Main(string[] args)
         {
-            var honda = new Car("Honda civic");
-            var tripConsumptions  = new List<double> () {9.5, 11.5, 12.1, 6.8, 13.2};
-            honda.AddConsumption(tripConsumptions);
+            var tripConsumptions = new List<double>();
+            Console.WriteLine("Please type your car");
+            var name = Console.ReadLine();
 
-            Console.WriteLine($"Avarage consumption of {honda.getName()} is {honda.getAverageConsumption()} ");
-            honda.showStatictic();
+            var car = new Car(name);
+            Console.WriteLine("Please type your consumption data using ' , ' between");
+            var consumptionString = Console.ReadLine();
+
+            IFormatProvider formatter = new NumberFormatInfo { NumberDecimalSeparator = "." };
+
+           string[] consumptionData = consumptionString.Split(',');
+           foreach (string s in consumptionData)
+           {
+               try 
+               {
+                   double d = double.Parse(s, formatter);
+                   tripConsumptions.Add(d);
+               }
+               catch(Exception ex)
+               {
+                   Console.WriteLine(ex.Message);
+                   throw;
+
+               } 
+           }
+
+            car.AddConsumption(tripConsumptions);
+
+            Console.WriteLine($"Avarage consumption of {car.getName()} is {car.getAverageConsumption()} ");
+            car.showStatictic();
+            
         }
     }
 }
