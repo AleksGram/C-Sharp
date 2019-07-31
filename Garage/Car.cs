@@ -5,12 +5,23 @@ namespace Garage
 {
     public class Car
     {   
+        public delegate string TestDelegate(string message);
         public Car(string name)
         {
             this.consumptionsStore = new List<double>(); 
             this.name = name;
         }
 
+        public string GetTestMessage(string name)
+        {
+            return name;
+        }
+
+        public string LogTestMessage (string name)
+        {
+             Console.WriteLine($"Delegate logger name {name} ");
+             return name;
+        }
         public string getName()
         {
             return this.name;
@@ -49,6 +60,12 @@ namespace Garage
                 highConsumption = Math.Max(consumption, highConsumption);
                 lowConsumption = Math.Min(consumption, lowConsumption);
             }
+
+            // Testing delegate
+            TestDelegate logger = GetTestMessage;
+            logger += LogTestMessage;
+            logger(this.name);
+
             Console.WriteLine($"Max consumption in trip {highConsumption} l/100");
             Console.WriteLine($"Min consumption in trip {lowConsumption} l/100");
         }
