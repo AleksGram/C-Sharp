@@ -10,10 +10,12 @@ namespace Garage
             this.consumptionsStore = new List<double>(); 
             this.name = name;
         }
+
         public string getName()
         {
             return this.name;
         }
+
         public void AddConsumption(List<double> tripConsumptions)
         {   
             foreach (double consumption in tripConsumptions) 
@@ -21,6 +23,7 @@ namespace Garage
                 this.consumptionsStore.Add(consumption);
             }
         }
+        
         public double getAverageConsumption()
         {
             var result = 0.0;

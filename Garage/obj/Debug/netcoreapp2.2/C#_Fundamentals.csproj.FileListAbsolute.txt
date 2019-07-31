@@ -20,3 +20,14 @@ d:\Keep\C#\Garage\bin\Debug\netcoreapp2.2\C#_Fundamentals.runtimeconfig.json
 d:\Keep\C#\Garage\bin\Debug\netcoreapp2.2\C#_Fundamentals.runtimeconfig.dev.json
 d:\Keep\C#\Garage\bin\Debug\netcoreapp2.2\C#_Fundamentals.dll
 d:\Keep\C#\Garage\bin\Debug\netcoreapp2.2\C#_Fundamentals.pdb
+E:\Projects\CHARP\C-Sharp\Garage\bin\Debug\netcoreapp2.2\C#_Fundamentals.deps.json
+E:\Projects\CHARP\C-Sharp\Garage\bin\Debug\netcoreapp2.2\C#_Fundamentals.runtimeconfig.json
+E:\Projects\CHARP\C-Sharp\Garage\bin\Debug\netcoreapp2.2\C#_Fundamentals.runtimeconfig.dev.json
+E:\Projects\CHARP\C-Sharp\Garage\bin\Debug\netcoreapp2.2\C#_Fundamentals.dll
+E:\Projects\CHARP\C-Sharp\Garage\bin\Debug\netcoreapp2.2\C#_Fundamentals.pdb
+E:\Projects\CHARP\C-Sharp\Garage\obj\Debug\netcoreapp2.2\C#_Fundamentals.csprojAssemblyReference.cache
+E:\Projects\CHARP\C-Sharp\Garage\obj\Debug\netcoreapp2.2\C#_Fundamentals.csproj.CoreCompileInputs.cache
+E:\Projects\CHARP\C-Sharp\Garage\obj\Debug\netcoreapp2.2\C#_Fundamentals.AssemblyInfoInputs.cache
+E:\Projects\CHARP\C-Sharp\Garage\obj\Debug\netcoreapp2.2\C#_Fundamentals.AssemblyInfo.cs
+E:\Projects\CHARP\C-Sharp\Garage\obj\Debug\netcoreapp2.2\C#_Fundamentals.dll
+E:\Projects\CHARP\C-Sharp\Garage\obj\Debug\netcoreapp2.2\C#_Fundamentals.pdb
