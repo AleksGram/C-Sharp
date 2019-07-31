@@ -4,10 +4,16 @@ using System.Collections.Generic;
 namespace Garage 
 {
     public delegate void ConsumptionAddedDelegate(Object sender , EventArgs args);
-    public class Car
+
+    public abstract class Vehicle
+    {
+        public abstract void AddConsumption(List<double> tripConsumptions);
+    }
+
+    public class InMemoryCar : Vehicle
     {   
         public delegate string TestDelegate(string message);
-        public Car(string name)
+        public InMemoryCar(string name)
         {
             this.consumptionsStore = new List<double>(); 
             this.name = name;
@@ -30,7 +36,7 @@ namespace Garage
             return this.name;
         }
 
-        public void AddConsumption(List<double> tripConsumptions)
+        public override void  AddConsumption(List<double> tripConsumptions)
         {   
             foreach (double consumption in tripConsumptions) 
             {

@@ -13,7 +13,7 @@ namespace Garage
             Console.WriteLine("Please type your car");
             var name = Console.ReadLine();
 
-            var car = new Car(name);
+            var car = new InMemoryCar(name);
             car.ConsumptionAdded += OnConsumptionAdded;
 
 
