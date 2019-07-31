@@ -5869,11 +5869,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\Projects\\CHARP\\C-Sharp\\Garage.Test\\Garage.Test.csproj",
+      "projectUniqueName": "E:\\Projects\\CHARP\\C-Sharp\\Garage.Test\\Garage.Test.csproj",
       "projectName": "Garage.Test",
-      "projectPath": "e:\\Projects\\CHARP\\C-Sharp\\Garage.Test\\Garage.Test.csproj",
+      "projectPath": "E:\\Projects\\CHARP\\C-Sharp\\Garage.Test\\Garage.Test.csproj",
       "packagesPath": "C:\\Users\\agra\\.nuget\\packages\\",
-      "outputPath": "e:\\Projects\\CHARP\\C-Sharp\\Garage.Test\\obj\\",
+      "outputPath": "E:\\Projects\\CHARP\\C-Sharp\\Garage.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5896,8 +5896,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "e:\\Projects\\CHARP\\C-Sharp\\Garage\\C#_Fundamentals.csproj": {
-              "projectPath": "e:\\Projects\\CHARP\\C-Sharp\\Garage\\C#_Fundamentals.csproj"
+            "E:\\Projects\\CHARP\\C-Sharp\\Garage\\C#_Fundamentals.csproj": {
+              "projectPath": "E:\\Projects\\CHARP\\C-Sharp\\Garage\\C#_Fundamentals.csproj"
             }
           }
         }

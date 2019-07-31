@@ -14,12 +14,14 @@ namespace Garage
 
         public string GetTestMessage(string name)
         {
+            Console.WriteLine($"Delegate GetTestMessage name {name} ");
+
             return name;
         }
 
         public string LogTestMessage (string name)
         {
-             Console.WriteLine($"Delegate logger name {name} ");
+             Console.WriteLine($"Delegate LogTestMessage name {name} ");
              return name;
         }
         public string getName()
