@@ -13,10 +13,14 @@ namespace Garage
             Console.WriteLine("Please type your car");
             var name = Console.ReadLine();
 
+<<<<<<< HEAD
             var car = new InMemoryCar(name);
             car.ConsumptionAdded += OnConsumptionAdded;
 
 
+=======
+            var car = new Car(name);
+>>>>>>> parent of ab044c6... gitignore
             Console.WriteLine("Please type your consumption data using ' , ' between");
             var consumptionString = Console.ReadLine();
 
@@ -43,12 +47,6 @@ namespace Garage
             Console.WriteLine($"Avarage consumption of {car.getName()} is {car.getAverageConsumption()} ");
             car.showStatictic();
             
-        }
-
-        static void OnConsumptionAdded(object sender, EventArgs e)
-        {
-          Console.WriteLine($"Consumption was added ");
-         
         }
     }
 }

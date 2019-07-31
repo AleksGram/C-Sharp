@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace Garage 
 {
+<<<<<<< HEAD
     public delegate void ConsumptionAddedDelegate(Object sender , EventArgs args);
 
     public abstract class Vehicle
@@ -11,6 +12,9 @@ namespace Garage
     }
 
     public class InMemoryCar : Vehicle
+=======
+    public class Car
+>>>>>>> parent of ab044c6... gitignore
     {   
         public delegate string TestDelegate(string message);
         public InMemoryCar(string name)
@@ -42,13 +46,7 @@ namespace Garage
             {
                 this.consumptionsStore.Add(consumption);
             }
-            if (ConsumptionAdded != null)
-             {
-                 ConsumptionAdded(this, new EventArgs());
-            }
         }
-
-        public event ConsumptionAddedDelegate ConsumptionAdded;
         
         public double getAverageConsumption()
         {
