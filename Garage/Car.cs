@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace Garage 
 {
+    public delegate void ConsumptionAddedDelegate(Object sender , EventArgs args);
     public class Car
     {   
         public delegate string TestDelegate(string message);
@@ -35,7 +36,13 @@ namespace Garage
             {
                 this.consumptionsStore.Add(consumption);
             }
+            if (ConsumptionAdded != null)
+             {
+                 ConsumptionAdded(this, new EventArgs());
+            }
         }
+
+        public event ConsumptionAddedDelegate ConsumptionAdded;
         
         public double getAverageConsumption()
         {

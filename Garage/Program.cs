@@ -14,6 +14,9 @@ namespace Garage
             var name = Console.ReadLine();
 
             var car = new Car(name);
+            car.ConsumptionAdded += OnConsumptionAdded;
+
+
             Console.WriteLine("Please type your consumption data using ' , ' between");
             var consumptionString = Console.ReadLine();
 
@@ -40,6 +43,12 @@ namespace Garage
             Console.WriteLine($"Avarage consumption of {car.getName()} is {car.getAverageConsumption()} ");
             car.showStatictic();
             
+        }
+
+        static void OnConsumptionAdded(object sender, EventArgs e)
+        {
+          Console.WriteLine($"Consumption was added ");
+         
         }
     }
 }
