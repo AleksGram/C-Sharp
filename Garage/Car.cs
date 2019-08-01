@@ -3,10 +3,17 @@ using System.Collections.Generic;
 
 namespace Garage 
 {
-    public class Car
+    public delegate void ConsumptionAddedDelegate(Object sender , EventArgs args);
+
+    public abstract class Vehicle
+    {
+        public abstract void AddConsumption(List<double> tripConsumptions);
+    }
+
+    public class InMemoryCar : Vehicle
     {   
         public delegate string TestDelegate(string message);
-        public Car(string name)
+        public InMemoryCar(string name)
         {
             this.consumptionsStore = new List<double>(); 
             this.name = name;
@@ -14,25 +21,35 @@ namespace Garage
 
         public string GetTestMessage(string name)
         {
+            Console.WriteLine($"Delegate GetTestMessage name {name} ");
+
             return name;
         }
 
         public string LogTestMessage (string name)
         {
-             Console.WriteLine($"Delegate logger name {name} ");
+             Console.WriteLine($"Delegate LogTestMessage name {name} ");
              return name;
         }
         public string getName()
         {
             return this.name;
         }
-        public void AddConsumption(List<double> tripConsumptions)
+
+        public override void  AddConsumption(List<double> tripConsumptions)
         {   
             foreach (double consumption in tripConsumptions) 
             {
                 this.consumptionsStore.Add(consumption);
+                if (this.ConsumptionAdded != null)
+                {
+                    this.ConsumptionAdded(this, new EventArgs());
+                }
             }
         }
+
+        public event  ConsumptionAddedDelegate ConsumptionAdded;
+        
         public double getAverageConsumption()
         {
             var result = 0.0;

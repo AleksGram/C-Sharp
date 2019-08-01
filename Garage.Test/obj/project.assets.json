@@ -5863,37 +5863,41 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alexandergr\\.nuget\\packages\\": {},
+    "C:\\Users\\agra\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Keep\\C#\\Garage.Test\\Garage.Test.csproj",
+      "projectUniqueName": "E:\\Projects\\CHARP\\C-Sharp\\Garage.Test\\Garage.Test.csproj",
       "projectName": "Garage.Test",
-      "projectPath": "d:\\Keep\\C#\\Garage.Test\\Garage.Test.csproj",
-      "packagesPath": "C:\\Users\\Alexandergr\\.nuget\\packages\\",
-      "outputPath": "d:\\Keep\\C#\\Garage.Test\\obj\\",
+      "projectPath": "E:\\Projects\\CHARP\\C-Sharp\\Garage.Test\\Garage.Test.csproj",
+      "packagesPath": "C:\\Users\\agra\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\CHARP\\C-Sharp\\Garage.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Alexandergr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\agra\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+        "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "d:\\Keep\\C#\\Garage\\C#_Fundamentals.csproj": {
-              "projectPath": "d:\\Keep\\C#\\Garage\\C#_Fundamentals.csproj"
+            "E:\\Projects\\CHARP\\C-Sharp\\Garage\\C#_Fundamentals.csproj": {
+              "projectPath": "E:\\Projects\\CHARP\\C-Sharp\\Garage\\C#_Fundamentals.csproj"
             }
           }
         }

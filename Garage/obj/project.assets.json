@@ -777,11 +777,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Keep\\C#\\Garage\\C#_Fundamentals.csproj",
+      "projectUniqueName": "D:\\Keep\\C#\\Garage\\C#_Fundamentals.csproj",
       "projectName": "C#_Fundamentals",
-      "projectPath": "d:\\Keep\\C#\\Garage\\C#_Fundamentals.csproj",
+      "projectPath": "D:\\Keep\\C#\\Garage\\C#_Fundamentals.csproj",
       "packagesPath": "C:\\Users\\Alexandergr\\.nuget\\packages\\",
-      "outputPath": "d:\\Keep\\C#\\Garage\\obj\\",
+      "outputPath": "D:\\Keep\\C#\\Garage\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
