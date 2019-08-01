@@ -13,33 +13,41 @@ namespace Garage
             Console.WriteLine("Please type your car");
             var name = Console.ReadLine();
 
-            var car = new InMemoryCar(name);
-            car.ConsumptionAdded += OnConsumptionAdded;
-            Console.WriteLine("Please type your consumption data using ' , ' between");
-            var consumptionString = Console.ReadLine();
+            // var car = new InMemoryCar(name);
+             var car = new DiskCar(name);
+             var consumption = new List<double>{10.5,12.3};
 
-            IFormatProvider formatter = new NumberFormatInfo { NumberDecimalSeparator = "." };
+             car.WriteInfo("Hello my darling");
+        
 
-           string[] consumptionData = consumptionString.Split(',');
-           foreach (string s in consumptionData)
-           {
-               try 
-               {
-                   double d = double.Parse(s, formatter);
-                   tripConsumptions.Add(d);
-               }
-               catch(Exception ex)
-               {
-                   Console.WriteLine(ex.Message);
-                   throw;
+        //     car.ConsumptionAdded += OnConsumptionAdded;
 
-               } 
-           }
+        //     Console.WriteLine("Please type your consumption data using ' , ' between");
 
-            car.AddConsumption(tripConsumptions);
+        //     var consumptionString = Console.ReadLine();
 
-            Console.WriteLine($"Avarage consumption of {car.getName()} is {car.getAverageConsumption()} ");
-            car.showStatictic();
+        //     IFormatProvider formatter = new NumberFormatInfo { NumberDecimalSeparator = "." };
+
+        //    string[] consumptionData = consumptionString.Split(',');
+        //    foreach (string s in consumptionData)
+        //    {
+        //        try 
+        //        {
+        //            double d = double.Parse(s, formatter);
+        //            tripConsumptions.Add(d);
+        //        }
+        //        catch(Exception ex)
+        //        {
+        //            Console.WriteLine(ex.Message);
+        //            throw;
+
+        //        } 
+        //    }
+
+        //     car.AddConsumption(tripConsumptions);
+
+        //     Console.WriteLine($"Avarage consumption of {car.getName()} is {car.getAverageConsumption()} ");
+        //     car.showStatictic();
             
         }
         static void OnConsumptionAdded(object sender, EventArgs e)

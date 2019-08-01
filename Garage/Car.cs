@@ -5,12 +5,19 @@ namespace Garage
 {
     public delegate void ConsumptionAddedDelegate(Object sender , EventArgs args);
 
+    public interface IVehicle
+    {
+        void AddConsumption(List<double> consumptions);
+        event ConsumptionAddedDelegate ConsumptionAdded;
+        void showStatictic();
+    }
+
     public abstract class Vehicle
     {
         public abstract void AddConsumption(List<double> tripConsumptions);
     }
 
-    public class InMemoryCar : Vehicle
+    public class InMemoryCar : Vehicle, IVehicle
     {   
         public delegate string TestDelegate(string message);
         public InMemoryCar(string name)
