@@ -4,21 +4,21 @@ using System.IO;
 
 namespace Garage
 {
-  public class DiskCar : Vehicle, IVehicle
+  public class DiskCar :  IVehicle
   {
     public DiskCar(string name)
     {
       this.name = name;
     }
 
-    public override void AddConsumption(List<double> tripConsumptions)
+    public  void AddConsumption(List<double> tripConsumptions)
     {
       var writer = File.AppendText($"Consumption.txt");
+        writer.WriteLine("c1 -- ");
 
       foreach (double consumption in tripConsumptions)
       {
 
-        writer.WriteLine(consumption);
       }
 
     }

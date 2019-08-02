@@ -14,13 +14,27 @@ namespace Garage
 
     public abstract class Vehicle
     {
-        public abstract void AddConsumption(List<double> tripConsumptions);
+        public Vehicle(string name)
+        {
+            this.name = name;
+        }
+        private List<double> ConsumptionStore;
+        public string name 
+        {
+            get; private set;
+        }
+        public virtual List<double> AddConsumption( List<double> consumption)
+        {
+            this.ConsumptionStore = consumption;
+            return consumption;
+        }
     }
+
 
     public class InMemoryCar : Vehicle, IVehicle
     {   
         public delegate string TestDelegate(string message);
-        public InMemoryCar(string name)
+        public InMemoryCar(string name) : base (name)
         {
             this.consumptionsStore = new List<double>(); 
             this.name = name;
@@ -43,7 +57,7 @@ namespace Garage
             return this.name;
         }
 
-        public override void  AddConsumption(List<double> tripConsumptions)
+        public  void  AddConsumption(List<double> tripConsumptions)
         {   
             foreach (double consumption in tripConsumptions) 
             {
