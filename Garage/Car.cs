@@ -7,7 +7,7 @@ namespace Garage
 
     public interface IVehicle
     {
-        void AddConsumption(List<double> consumptions);
+        List<double> AddConsumption(List<double> consumptions);
         event ConsumptionAddedDelegate ConsumptionAdded;
         void showStatictic();
     }
@@ -37,7 +37,7 @@ namespace Garage
         public InMemoryCar(string name) : base (name)
         {
             this.consumptionsStore = new List<double>(); 
-            this.name = name;
+         
         }
 
         public string GetTestMessage(string name)
@@ -52,12 +52,8 @@ namespace Garage
              Console.WriteLine($"Delegate LogTestMessage name {name} ");
              return name;
         }
-        public string getName()
-        {
-            return this.name;
-        }
 
-        public  void  AddConsumption(List<double> tripConsumptions)
+        public override List<double>  AddConsumption(List<double> tripConsumptions)
         {   
             foreach (double consumption in tripConsumptions) 
             {
@@ -67,6 +63,7 @@ namespace Garage
                     this.ConsumptionAdded(this, new EventArgs());
                 }
             }
+            return tripConsumptions;
         }
 
         public event  ConsumptionAddedDelegate ConsumptionAdded;
@@ -106,7 +103,6 @@ namespace Garage
             Console.WriteLine($"Min consumption in trip {lowConsumption} l/100");
         }
 
-        private string name;
         private List<double> consumptionsStore;
 
     }

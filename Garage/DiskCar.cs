@@ -11,15 +11,18 @@ namespace Garage
       this.name = name;
     }
 
-    public  void AddConsumption(List<double> tripConsumptions)
+    public  List<double> AddConsumption(List<double> tripConsumptions)
     {
-      var writer = File.AppendText($"Consumption.txt");
-        writer.WriteLine("c1 -- ");
+
 
       foreach (double consumption in tripConsumptions)
       {
-
+        using (var writer = File.AppendText($"Consumption.txt"))
+        {
+          writer.WriteLine($"c1 -- {consumption.ToString()}");
+        }
       }
+      return tripConsumptions;
 
     }
     public void WriteInfo(string s)
